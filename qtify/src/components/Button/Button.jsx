@@ -1,8 +1,9 @@
 import React from 'react'
+import style from "./Button.module.css"
  function Button() {
   return (
     <div>
-    <button style={{color:"#34C94B", height:"2rem",borderRadius:"5px", width:"10rem",backgroundColor:"#121212"}} >Give Feedback</button>
+    <button className={style.button} >Give Feedback</button>
      </div>
    
     )

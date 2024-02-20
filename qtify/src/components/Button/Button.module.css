@@ -1,11 +1,15 @@
-button{
+.button{
     /* height:"2rem",borderRadius:"6px",outline:"none",width:"25rem" */
+    color:#34C94B;
     height: 2rem;
-    border-radius: 6px;
-    outline: none;
-    width: 25rem;
-    font-style: poppins;
+    border-radius: 5px;
+    width: 10rem;
+    background-color: #121212;
+    font-family: poppins;
 }
-button:hover{
+.button:hover{
     cursor: pointer;
 }
+
+/*  */
+/* {{color:"#34C94B", height:"2rem",borderRadius:"5px", width:"10rem",backgroundColor:"#121212"}} */
