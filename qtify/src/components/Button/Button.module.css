@@ -1,6 +1,5 @@
 .button{
-    /* height:"2rem",borderRadius:"6px",outline:"none",width:"25rem" */
-    color:#34C94B;
+     color:#34C94B;
     height: 2rem;
     border-radius: 5px;
     width: 10rem;
@@ -11,5 +10,4 @@
     cursor: pointer;
 }
 
-/*  */
-/* {{color:"#34C94B", height:"2rem",borderRadius:"5px", width:"10rem",backgroundColor:"#121212"}} */
+  
