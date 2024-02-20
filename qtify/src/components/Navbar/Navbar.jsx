@@ -5,7 +5,7 @@ import SearchBar from '../SearchBar/SearchBar'
 import Button from '../Button/Button'
 function Navbar() {
   return (
-    <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",backgroundColor:"#34C948",height:"74px",padding:"0px 32px"}} >
+    <div className={styles.Navbar} >
         <Logo/>
        <SearchBar/>
        <Button/>

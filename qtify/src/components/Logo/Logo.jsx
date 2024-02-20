@@ -1,8 +1,11 @@
 import React from 'react'
 import LogoImage from "../../assets/logo.png"
+import style from "./Logo.module.css"
 
 function Logo() {
-  return <img src={LogoImage}  width={65} style={{marginLeft:"2rem"}} alt="QTify Logo" />
+  return  <div className={style.logo}>
+    <img src={LogoImage}  width={65} alt="QTify Logo" />
+  </div>
 }
 
 export default Logo

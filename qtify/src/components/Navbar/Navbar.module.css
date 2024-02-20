@@ -1,0 +1,9 @@
+/* {display:"flex",alignItems:"center",justifyContent:"space-between",backgroundColor:"#34C948",height:"74px",padding:"0px 32px"} */
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#34C948;
+    height:74px;
+    padding: 0px 32px ;
+}
