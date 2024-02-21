@@ -1,0 +1,7 @@
+.cardSection{
+    /* style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }} */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}

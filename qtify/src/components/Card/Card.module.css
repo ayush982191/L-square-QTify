@@ -1,0 +1,35 @@
+ .cardDiv{
+    /* style={{display:"10vh",backgroundColor:"white",borderRadius:"10px"}} */
+ display: 10vh;
+ background-color: white;
+ border-radius: 10px;
+
+}
+
+.imageDiv{
+    /* style={{width:"10rem",position:"relative"}} */
+    width: 10rem;
+    position: relative;
+}
+.imageDiv p{
+    /* style={{fontSize:"10px",position:"absolute",top:"20vh",color:"white",textAlign:"center"}}  */
+font-size: 10px;
+position: absolute;
+top: 20vh;
+color: white;
+text-align: center;
+}
+
+/* style={{fontSize:"10px",position:"absolute",top:"20vh",color:"white",textAlign:"center"}}  */
+/* .imageAndText{
+    font-size: 10px;
+    position: absolute;
+    top: 20vh;
+    color: white;
+    text-align: center;
+} */
+
+.mainDiv p{
+    color: white;
+    /* style={{color:"white"}} */
+}
