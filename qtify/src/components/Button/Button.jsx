@@ -1,9 +1,10 @@
 import React from 'react'
-import style from "./Button.module.css"
+// import style from "./Button.module.css"
+import "./AllButton.css"
  function Button() {
   return (
     <div>
-    <button className={style.buttonn}>Give Feedback</button>
+    <button className="buttonn" >Give Feedback</button>
      </div>
    
     )
