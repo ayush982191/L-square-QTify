@@ -11,8 +11,7 @@ function App() {
   return (
    <>
      <StyledEngineProvider injectFirst>
-      {/* Your component tree. Now you can override Material UI's styles. */}
-   <Navbar />
+    <Navbar />
    <Hero/>
 
  <div className="section">

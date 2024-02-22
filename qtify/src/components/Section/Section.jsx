@@ -24,11 +24,11 @@ function Section() {
     return (
         <>
             <div>
-                <div className="" style={{color:"white"}} >
-                    <h1>Top Albums</h1>
-                    <p>Collapse</p>
+                <div className={style.albumText}  >
+                    <h1 >Top Albums</h1>
+                    <button >Collapse</button>
                 </div>
-                <div className={style.cardSection}>
+                <div className={style.cardSection} >
                     {apiData.map(item => (
                         <Card  item={item} />
                     ))}
