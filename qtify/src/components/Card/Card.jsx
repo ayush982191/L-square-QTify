@@ -8,11 +8,10 @@ function Card(item) {
     <>
     
       <div className={style.mainDiv} >
-        {/* <h1>Top Albums</h1> */}
-        <div className={style.cardDiv} >
+         <div className={style.cardDiv} >
           <div className={style.imageDiv}  >
           <img src={item?.item?.image} style={{width:"100%"}} alt="" />
-          <p >{item?.item?.description}</p>
+          {/* <p >{item?.item?.description}</p> */}
           </div>
           {/*  */}
           <Chip
@@ -22,14 +21,15 @@ function Card(item) {
                   color: "white",
                   width: "8rem",
                   fontSize: "10px",
-                  marginBottom:"7px"
+                  marginBottom:"7px",
+                  marginLeft:"5px"
                 }}
                 variant="outlined"
               />
 
 
         </div>
-        <p style={{color:"white"}} >{item.item.title}</p>
+        <p style={{color:"white"}} >{item?.item?.title}</p>
       </div>
     </>
   );

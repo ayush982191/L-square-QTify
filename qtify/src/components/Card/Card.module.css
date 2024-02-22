@@ -10,6 +10,14 @@
     /* style={{width:"10rem",position:"relative"}} */
     width: 10rem;
     position: relative;
+    /* border-radius: 10px; */
+    /* height: 20px; */
+}
+.imageDiv img{
+    height: 25vh;
+    /* border-radius: 10px; */
+    border-top-right-radius:10px ;
+    border-top-left-radius: 10px;
 }
 .imageDiv p{
     /* style={{fontSize:"10px",position:"absolute",top:"20vh",color:"white",textAlign:"center"}}  */
@@ -17,6 +25,8 @@ font-size: 10px;
 position: absolute;
 top: 20vh;
 color: white;
+/* height: 10vh; */
+
 text-align: center;
 }
 

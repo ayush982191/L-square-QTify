@@ -14,7 +14,7 @@ function Section() {
             console.log("api data is",apiData[0]);
         } catch (error) {
              console.error('Error fetching data:', error);
-        }
+        }                                                                                                                           
     };
 
     useEffect(() => {
