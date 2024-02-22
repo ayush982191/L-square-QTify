@@ -28,7 +28,7 @@ function Section() {
     return (
         <>
              {/* <Container > */}
-             <div style={{margin:"0 3rem"}} >
+             <div className={style.mainDiv}   >
              
                 <div className={style.albumText}  >
                     <h1 >Top Albums</h1>

@@ -43,3 +43,8 @@ text-align: center;
     color: white;
     /* style={{color:"white"}} */
 }
+.songName{
+    /* style={{color:"white",marginTop:"5px"}}  */
+    color: white;
+    margin-top: 5px;
+}

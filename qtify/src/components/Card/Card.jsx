@@ -29,7 +29,7 @@ function Card(item) {
 
 
         </div>
-        <p style={{color:"white"}} >{item?.item?.title}</p>
+        <p className={style.songName} >{item?.item?.title}</p>
       </div>
     </>
   );
