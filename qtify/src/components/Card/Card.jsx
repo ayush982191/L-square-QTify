@@ -10,7 +10,7 @@ function Card(item) {
       <div className={style.mainDiv} >
          <div className={style.cardDiv} >
           <div className={style.imageDiv}  >
-          <img src={item?.item?.image} style={{width:"100%"}} alt="" />
+          <img src={item?.item?.image}  alt="" />
           {/* <p >{item?.item?.description}</p> */}
           </div>
           {/*  */}
