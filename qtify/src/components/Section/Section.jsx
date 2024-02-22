@@ -3,6 +3,10 @@ import axios from 'axios';
 import Card from '../Card/Card';
 import style from "./Section.module.css"
 
+import Container from '@mui/material/Container';
+
+
+
 function Section() {
     const [apiData, setApiData] = useState([]);
 
@@ -23,7 +27,9 @@ function Section() {
 
     return (
         <>
-            <div>
+             {/* <Container > */}
+             <div style={{margin:"0 3rem"}} >
+             
                 <div className={style.albumText}  >
                     <h1 >Top Albums</h1>
                     <button >Collapse</button>
@@ -33,7 +39,8 @@ function Section() {
                         <Card  item={item} />
                     ))}
                 </div>
-            </div>
+                </div>
+                {/* </Container> */}
         </>
     );
 }
