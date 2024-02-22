@@ -5,9 +5,10 @@
    width: 10rem;
    background-color: #121212;
    font-family: Poppins;
+   cursor: pointer;
 }
 .buttonn:hover{
-   cursor: pointer;
+   /* cursor: pointer; */
 }
 
  
