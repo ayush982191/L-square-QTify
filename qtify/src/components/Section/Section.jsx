@@ -14,8 +14,15 @@ function Section() {
         console.log("Enter in fetchData");
         try {
              const response = await axios.get('https://qtify-backend-labs.crio.do/albums/top');
+            // setApiData(response.data);
+            // console.log("api data is",apiData[0]);
+            // console.log("api data is ",apiData);
+            // console.log("response coming is ",response);
+            // console.log("response coming is ",response);
+            console.log("response data is ",response.data);
+            console.log("response data length is ",response.data.length);
             setApiData(response.data);
-            console.log("api data is",apiData[0]);
+
         } catch (error) {
              console.error('Error fetching data:', error);
         }                                                                                                                           
@@ -35,7 +42,7 @@ function Section() {
                     <button >Collapse</button>
                 </div>
                 <div className={style.cardSection} >
-                    {apiData.map(item => (
+                    {apiData.map(item => ( 
                         <Card  item={item} />
                     ))}
                 </div>

@@ -1,21 +1,21 @@
 import React from "react";
 import Chip from "@mui/material/Chip";
 import style from "./Card.module.css";
-function Card(item) { 
+function Card({item}) { 
   // {title,description,follows,id,image,slug,songs}
-  console.log("item is ",item?.item);
+  console.log("item is ",item);
   return ( 
     <>
     
       <div className={style.mainDiv} >
          <div className={style.cardDiv} >
           <div className={style.imageDiv}  >
-          <img src={item?.item?.image}  alt="" />
+          <img src={item?.image}  alt="" />
           {/* <p >{item?.item?.description}</p> */}
           </div>
           {/*  */}
           <Chip
-                label={`${item?.item?.follows} follows`} 
+                label={`${item?.follows} follows`} 
                 sx={{
                   backgroundColor: "black",
                   color: "white",
@@ -29,7 +29,7 @@ function Card(item) {
 
 
         </div>
-        <p className={style.songName} >{item?.item?.title}</p>
+        <p className={style.songName} >{item?.title}</p>
       </div>
     </>
   );
