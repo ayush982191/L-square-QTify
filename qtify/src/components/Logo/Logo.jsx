@@ -3,9 +3,9 @@ import LogoImage from "../../assets/logo.png"
 import style from "./Logo.module.css"
 
 function Logo() {
-  return  <div className={style.logo}>
-    <img src={LogoImage}  width={65} alt="QTify Logo" />
-  </div>
+  return  (
+    <img src={LogoImage} alt="" width={50} />
+  )
 }
 
 export default Logo
