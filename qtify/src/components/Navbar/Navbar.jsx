@@ -1,5 +1,5 @@
 import React,{useState } from 'react' 
-import style from "./Navbar.module.css"
+import styles from "./Navbar.module.css"
 import FeedbakModal from '../Modals/FeedbackModal/FeedbakModal';
 import SearchBar from "../SearchBar/SearchBar"
 import Logo from '../Logo/Logo';
@@ -8,8 +8,8 @@ import Logo from '../Logo/Logo';
 
 
 function Navbar({logo=false, feedback=false, search=false }) {
-  const [isFeedBackModelOpen,setIsFeedBackModelOpen]=useState(false);                                        
-  const _toggelFeedBackModel=(value=false)=>{
+  const [isFeedBackModalOpen,setIsFeedBackModelOpen]=useState(false);                                        
+  const _toggleFeedBackModal=(value=false)=>{
     setIsFeedBackModelOpen(value);
   }
  const _onSuccess=()=>{
@@ -19,37 +19,37 @@ function Navbar({logo=false, feedback=false, search=false }) {
 
 
   return (
-     <>
-    <div className={style.Navbar}>
-    <ul className={style.wrapper} >
-      <li> 
-        { logo?
-        <>
-        {<Logo />}
-        </>:null }
-
-      </li>
-      <li>
-        {search?<>
-        {<SearchBar placeholder="search album of your choice" />}
-        </>:null}
-
-      </li>
-      <li>
-        {feedback?<>
-        <div onClick={()=>_toggelFeedBackModel(true)} className={style.button}>
-          Give Feedback
+     
+    <div className={styles.wrapper}>
+    <nav className={styles.navbar}>
+      <div className={styles.logoWrapper} onClick={() => navigate(`/`)}>
+        {logo ? <Logo id={styles.logo} /> : null}
+      </div>
+      {search ? (
+        <div className={styles.searchWrapper}>
+          <SearchBar
+            placeholder="Search a album of your choice"
+             
+          />
         </div>
-        </>:null}
-        <FeedbakModal isOpen={isFeedBackModelOpen} onSuccess={_onSuccess} onDismiss={_toggelFeedBackModel}  />
+      ) : null}
 
-      </li>
-    </ul>
-
-
-    </div>
+      {feedback ? (
+        <div
+          className={styles.nav_link}
+          onClick={() => _toggleFeedBackModal(true)}>
+          Feedback
+        </div>
+      ) : null}
+    </nav>
+    <FeedbakModal
+      isOpen={isFeedBackModalOpen}
+      onSuccess={_onSuccess}
+      onDismiss={_toggleFeedBackModal}
+    />
+  </div>
    
-    </>
+    
   )
 }
 

@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins';
+    background-color: black;
 }
 :root{
     --color-primary: #34c94b;

@@ -1,51 +1,60 @@
- .cardDiv{
-    /* style={{display:"10vh",backgroundColor:"white",borderRadius:"10px"}} */
- display: 10vh;
- background-color: white;
- border-radius: 10px;
-
+.wrapper {
+	width: 160px;
+	margin-bottom: 15px;
 }
 
-.imageDiv{
-    /* style={{width:"10rem",position:"relative"}} */
-    width: 10rem;
-    position: relative;
-    /* border-radius: 10px; */
-    /* height: 20px; */
+.card {
+	font-family: "Poppins", sans-serif;
+	position: relative;
+	width: 160px;
+	/* width: 20vw; */
+	height: 205px;
+	/* height: 7vh; */
+	border-radius: 10px;
+	overflow: hidden;
+	border: 1px solid black;
 }
-.imageDiv img{
-    height: 25vh;
+.card img{
     width: 100%;
-    /* border-radius: 10px; */
-    border-top-right-radius:10px ;
-    border-top-left-radius: 10px;
+	/* overflow: hidden; */
 }
-.imageDiv p{
-    /* style={{fontSize:"10px",position:"absolute",top:"20vh",color:"white",textAlign:"center"}}  */
-font-size: 10px;
-position: absolute;
-top: 20vh;
-color: white;
-/* height: 10vh; */
+.banner {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 42px;
+	background-color: var(--color-primary);
+	display: flex;
+	align-items: center;
+	padding: 6px;
 
-text-align: center;
+	.chip {
+		font-family: "Poppins", sans-serif;
+		background-color: var(--color-black);
+		color: var(--color-white);
+		border: 1px solid var(--color-black);
+	}
 }
 
-/* style={{fontSize:"10px",position:"absolute",top:"20vh",color:"white",textAlign:"center"}}  */
-/* .imageAndText{
-    font-size: 10px;
-    position: absolute;
-    top: 20vh;
-    color: white;
-    text-align: center;
-} */
-
-.mainDiv p{
-    color: white;
-    /* style={{color:"white"}} */
+.titleWrapper {
+	margin-top: 6px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
-.songName{
-    /* style={{color:"white",marginTop:"5px"}}  */
-    color: white;
-    margin-top: 5px;
+
+.titleWrapper p {
+	font-size: large;
+	margin-top: 6px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#pill {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	background-color: var(--color-black);
+	width: max-content;
+	padding: 6px;
+	border-radius: 10px;
 }
