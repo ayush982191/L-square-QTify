@@ -12,6 +12,12 @@
 .logoWrapper {
 	cursor: pointer;
 }
+.feedback{
+	/* {color:"white",backgroundColor:"black",border:"none"} */
+	color: var(--color-primary);
+	background-color: black;
+	border: none;
+}
 
 .navbar {
 	width: 90vw;

@@ -38,7 +38,7 @@ function Navbar({logo=false, feedback=false, search=false }) {
         <div
           className={styles.nav_link}
           onClick={() => _toggleFeedBackModal(true)}>
-          Feedback
+          <button className={styles.feedback} >Feedback</button>
         </div>
       ) : null}
     </nav>
